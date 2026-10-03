@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body{
+  margin: 0;
+  background-color: lightgrey;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.head{
+  width: 100%;
+  color: black;
+  background-color: white;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.body>input{
+  position: relative;;
+  left: 0%;;
+}
