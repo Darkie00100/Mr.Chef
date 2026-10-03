@@ -6,6 +6,7 @@ export default function Body(){
             <form className="input">
                 <input type="text" placeholder="Enter ingredients" />
                 <span><button className="add_ingri"> +Add ingredients</button></span>
+                <h1>hi</h1>
             </form>
 
             </>
