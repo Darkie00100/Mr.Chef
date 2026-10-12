@@ -8,6 +8,7 @@ export default function Body(){
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const newItem = formData.get("ingridents")
+        
         if (newItem.trim()!=null) {
             setIngrideants(preIems=>[...preIems,newItem])
             event.currentTarget.reset();
