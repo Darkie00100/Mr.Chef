@@ -1,8 +1,8 @@
 import React from "react"
 export default function Body(){
-    const [ingrideants,setIngrideants] = React.useState([])
-    const IngrideantItemsList = ingrideants.map(ingridient=>{
-        return <li key={ingridient}>{ingridient} </li>
+    const [ingredients,setIngrideants] = React.useState([])
+    const IngrediantItemsList = ingredients.map(ingredient=>{
+        return <li key={ingredient}>{ingredient} </li>
     })
     function handelSubmit(event){
         event.preventDefault()
@@ -28,9 +28,32 @@ export default function Body(){
                 
             </form>
 
+        
+                {ingredients.length > 0 && (
+    <section className="ingredient-section">
+        <h2>Ingredients in Chef Bag</h2>
+
         <ul className="itemList">
-         {IngrideantItemsList}
+            {IngrediantItemsList}
         </ul>
+    </section>
+)}
+
+{ingredients.length > 0 && (
+    <div className="get-recipie">
+        <div>
+            <h3>Ready to get Recipe?</h3>
+            <p>Generate the recipe from the items in the Chef Bag.</p>
+        </div>
+
+        <button className="recipe-Button">
+            Get Recipe
+        </button>
+    </div>
+)}
+
+             
+        
             
         </div>
     )
